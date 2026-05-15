@@ -37,13 +37,13 @@ if(isNaN(numero)){
 }
 
 //EJERCICIO NUMERO 4
-let base=parseFloat(prompt("Ingrese la base del triangulo: "));
-let altura=parseFloat(prompt("Ingrese la altura del triangulo: "));
+let base=parseFloat(prompt("Ingrese la base del rectángulo: "));
+let altura=parseFloat(prompt("Ingrese la altura del rectángulo: "));
 if(isNaN(base) || isNaN(altura)){
     console.log(`solo se permiten numeros, sin dejar vacio`);
 }else{
-    let area=(base*altura)/2;
-    console.log(`El area del triangulo es: ${area}`);
+    let area=base*altura;
+    console.log(`El area del rectángulo es: ${area}`);
 }
 
 
