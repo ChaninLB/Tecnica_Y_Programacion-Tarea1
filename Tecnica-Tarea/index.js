@@ -120,12 +120,12 @@ let descuento=0;
 let total=0;
 if(isNaN(precio)){
     console.log(`solo se permiten numeros, sin dejar vacio`);
-}else if(precio>100){
+}else if(precio<100){
     descuento=precio*0.00;
 }else if(precio>100 && precio<150){
-    let descuento=precio*0.10;
+    descuento=precio*0.10;
 }else if(precio>150){
-    let descuento=precio*0.15;
+    descuento=precio*0.15;
 }
 total=precio-descuento;
 console.log(`El precio final del producto es: ${total}`);
