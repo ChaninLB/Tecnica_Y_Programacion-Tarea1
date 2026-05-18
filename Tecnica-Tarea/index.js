@@ -412,14 +412,12 @@ function multiplicacion() {
     return console.log(`El resultado de la multiplicacion es: ${multiplicacion}`);
 }
 function division() {
-    let candtidad_numeros=parseInt(prompt("Ingrese la cantidad de numeros a dividir: "));
-    let division=1;
-    for(let i=0; i<candtidad_numeros; i++){
-        let numero=parseFloat(prompt(`Ingrese el numero ${i+1}: `));
-        division=numero/division;
+    let division=0;
+        let numero=parseFloat(prompt(`Ingrese el numero`));
+        let divisor=parseFloat(prompt(`Ingrese el divisor del numero`));
+        division=numero/divisor;
+        return console.log(`El resultado de la division es: ${division}`);
     }
-    return console.log(`El resultado de la division es: ${division}`);
-}
 function AreaDelRectangulo() {
     let base=parseFloat(prompt("Ingrese la base del rectangulo: "));
     let altura=parseFloat(prompt("Ingrese la altura del rectangulo: "));
