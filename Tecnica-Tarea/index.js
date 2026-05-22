@@ -236,20 +236,15 @@ let numero=10
     }
 
 //EJERCICIO NUMERO 20 Sumar números ingresados por el usuario hasta que el usuario ingrese 0 (while).
-let acertado=0
+let acertado
 let suma=0
-let c=0
-let acu=1
-while( c=acu){
-    let acertado=parseInt(prompt("ingresar numero"));
+while(acertado!==0){
+    acertado=parseInt(prompt("ingresar numero (parea detener ingresar 0): "));
+    console.log(`El numero ingresado es: ${acertado}`);
     suma=suma+acertado
-        if(acertado===0){
-        console.log(suma);
-        break
-        }
-c++
-acu++
 }
+return console.log(`La suma total de los numeros ingresados es: ${suma}`);
+
 
 //EJERCICIO NUMERO 21 Solicite al usuario ingresar un número por teclado y presente la tabla de multiplicar de ese número.
 let numero_multiplo=parseInt(prompt("Ingrese un numero: "));
